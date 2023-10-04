@@ -21,7 +21,7 @@ body {
 }
 nav {
     z-index: 100;
-    color: #fff;
+    color: #FFF3d8;
     text-align: center;
     position: fixed;
     border-bottom: 1px solid #b1b1b1;
@@ -29,8 +29,8 @@ nav {
     width: 100%;
     transition: background-color 0.5s ease;
 }
-nav.putih {
-    background-color: #ffffff;
+nav .putih {
+    background-color: transparent;
 }
 nav .logo {
     float: left;
@@ -40,7 +40,11 @@ nav .logo {
 }
 nav .logo img {
     vertical-align: middle;
-    width: 120px;
+    width: 140px;
+}
+nav .logo .putih {
+    width: 130px; 
+    height: 80px; 
 }
 
 nav .menu {
@@ -63,7 +67,7 @@ nav .menu ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #FFF;
     text-align: center;
     padding: 0px 16px 0px 16px;
     text-decoration: none;
@@ -110,7 +114,7 @@ header .intro p {
 }
 .tombol {
     background-color: transparent;
-    border: 2px solid white;
+    border: 2px solid #fff;
     font-style: normal;
     font-weight: bold;
     height: 40px;
@@ -130,7 +134,7 @@ header .overlay {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: #000;
+    background-color: #333;
     opacity: 50%;
     z-index: -1;
 }
@@ -155,7 +159,7 @@ section h3 {
 }
 section h3::after {
     content: "";
-    border-bottom: 5px solid #c86b85;
+    border-bottom: 5px solid #c4b6f4;
     width: 52px;
     display: block;
     margin: 20px auto;
@@ -263,7 +267,7 @@ section.quote .layar-dalam p {
 }
 .blog .area {
     width: 47%;
-    box-shadow: 0px -10px 30px #ccc;
+    box-shadow: 0px -10px 30px #c4b6f4;
     border-radius: 5px;
     display: flex;
     flex-direction: row;
@@ -286,7 +290,7 @@ section.quote .layar-dalam p {
     margin: 0px;
 }
 .blog .area .text article a {
-    color: #333;
+    color: #330f77;
     text-decoration: none;
     transition: color o.5s ease;
 }
@@ -310,6 +314,13 @@ footer .layar-dalam h5 {
     margin-top: 0px;
     font-size: 20px;
     font-weight: bold;
+}
+a.custom-link {
+    color: white;
+    text-decoration: none;
+}
+footer .layar-dalam a:hover {
+    text-decoration: underline;
 }
 footer .layar-dalam .copyright {
     width: 100%;
@@ -338,6 +349,7 @@ footer .layar-dalam .copyright {
     }
     nav .menu ul li a {
         color: #333;
+        font-weight: bold;
     }
     .tombol-menu {
         display: flex;
