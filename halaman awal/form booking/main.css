@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.card-content p {
+    color: #000;
+}
+
+.banner{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("mandalika8.jpg") center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding-bottom: 20px;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: 420px 420px;
+}
+.card-img{
+    background: url("mandalika7.png") center/cover no-repeat;
+    border-radius: 10px;
+    position: relative;
+    border-top-right-radius: 0; 
+    border-bottom-right-radius: 0;
+}
+.banner h2{
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+.card-content{
+    background: #fff;
+    height: 400px;
+    border-radius: 10px;
+    position: relative;
+    border-top-left-radius: 0; 
+    border-bottom-left-radius: 0;
+}
+.card-content h3{
+    text-align: center;
+    color: #000;
+    padding: 25px 0 10px 0;
+    font-size: 20px;
+    font-weight: 500 bold;
+}
+.card-content h2{
+    text-align: center;
+    color: #000;
+    padding: 25px 0 10px 0;
+    font-size: 12px;
+    font-weight: 500 bold;
+}
+.form-row{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+form select, form input{
+    display: block;
+    width: 100%;
+    margin: 15px 12px;
+    padding: 5px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #eee;
+    font-weight: 300;
+}
+form input[type = text], form input[type = date], form input[type = email], form input[type = number], form input::placeholder, select{
+    color: #9a9a9a;
+}
+form input[type="text"]:focus,
+form input[type = date]:focus, 
+form input[type = email]:focus,
+form input[type="number"]:focus,
+form select:focus{
+    font-weight: bold;
+    color: #000;
+}
+form input[type = submit]{
+    color: #fff;
+    background: #f2745f;
+    padding: 12px 0;
+    width: 50%;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+form input[type = submit]:hover{
+    opacity: 0.9;
+}
+@media(max-width: 992px){
+    .card-container{
+        grid-template-columns: 100%;
+        width: 100vw;
+    }
+    .card-img{
+        height: 330px;
+    }
+    .banner h2{
+        margin-top: 20px;
+        padding-bottom: 0;
+        margin-bottom: 20px;
+    }
+}
